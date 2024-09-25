@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.HomeActivity">
+
+    <TextView
+        android:id="@+id/titleQuiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quiz App"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Become a Quiz Master"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleQuiz" />
+
+    <ImageView
+        android:id="@+id/imgQuiz"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <Button
+        android:id="@+id/btnStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/secondary"
+        android:text="Let's Get Started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuiz"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuiz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
